@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: "New Rocker", system-ui;
+    color: white;
+    background: black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #0a0a0a;
+    border-right: 2px solid #ff0000;
+    padding-top: 20px;
+}
+
+.sidebar img {
+    display: block;
+    max-width: 160px;
+    margin: 0 auto 30px auto;
+}
+
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #ff00003a;
+    color: white;
+    border-radius: 10px;
+}
+
+main {
+    margin-left: 220px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #0a0a0a;
+    border-bottom: 2px solid #ff0000;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+nav input {
+    background: #111;
+    border: 1px solid #000000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+header {
+    text-align: center;
+    padding: 100px;
+    background-image: url(Images/Background_BlackHole.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header img {
+    width: 800px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.tabs span {
+    border: 1px solid #000000;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+.tabs span.red {
+    color: #ff0000;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    max-width: 120px;
+    margin: 10px auto;
+    display: block;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ff0000;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #aaa;
+    text-align: left;
+}
+
+.card ul li::before {
+    content: "+ ";
+    color: #ff0000;
+}
+
+.card .date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* joga a lupa para a direita */
+    align-items: center;
+    padding: 10px 20px;
+    background: #0a0a0a;
+    border-bottom: 2px solid #ff0000;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #ff0000;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.search-icon:hover {
+    color: white;
+    transform: scale(1.2);
+}
